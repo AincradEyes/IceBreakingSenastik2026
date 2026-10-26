@@ -14,3 +14,19 @@ h1{margin:0;font-size:clamp(2.6rem,7vw,5rem);line-height:1.05;letter-spacing:-.0
 .leaderboard{width:min(650px,100%);margin:22px auto 10px;padding:18px;text-align:left;background:#111827;border:1px solid #334155;border-radius:16px}.leaderboard h3{text-align:center;margin:0 0 4px}.leader-note{text-align:center;color:var(--muted);font-size:.85rem}.leaderboard ol{padding-left:28px}.leaderboard li{padding:9px 4px;border-bottom:1px solid #334155}.leaderboard li span{display:inline-block;max-width:75%;overflow-wrap:anywhere}.leaderboard li strong{float:right;color:var(--yellow)}
 dialog{width:min(450px,calc(100% - 28px));padding:28px;color:#fff;background:#1e293b;border:1px solid #475569;border-radius:18px}dialog::backdrop{background:#000b}.dialog-actions{display:flex;gap:8px;flex-wrap:wrap}.dialog-actions .btn{flex:1}
 @media(max-width:650px){.screen{padding:22px 16px;border-radius:16px}.question-card{min-height:360px;padding:16px}.game-footer{align-items:flex-start;flex-direction:column}.actions{justify-content:stretch;width:100%}.actions .btn{flex:1}}
+
+.live-score-link {
+  display: inline-block;
+  padding: 12px 20px;
+  margin: 10px 0;
+  background: #5636a5;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: background 0.2s ease;
+}
+
+.live-score-link:hover {
+  background: #3f267e;
+}
