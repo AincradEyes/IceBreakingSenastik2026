@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ice Breaking - Tebak Gambar</title><link rel="stylesheet" href="style.css"></head>
+<body><main class="app">
+<section id="intro" class="screen intro">
+<p class="eyebrow">ICE BREAKING</p><h1>TEBAK GAMBAR</h1>
+<p class="themes">SAINS <span>•</span> TEKNOLOGI <span>•</span> BISNIS</p>
+<p class="subtitle">Tebak istilah dari kombinasi gambar dan emoji!</p>
+<p class="meta">13 soal | 15 detik per soal | 10 poin untuk setiap jawaban benar</p>
+<button id="startBtn" class="btn btn-start">MULAI PERMAINAN ▶</button>
+<p class="tip">Tips: mainkan di layar penuh agar terlihat jelas melalui proyektor.</p>
+<p class="event">SENASTIK 2026</p><p class="organizer">Universitas PGRI Kalimantan</p>
+</section>
+<section id="game" class="screen game hidden">
+<header class="topbar"><span id="progress">SOAL 1 / 13</span><span id="score">SKOR: 0</span></header>
+<p id="category" class="category">SAINS</p>
+<article class="question-card"><p class="question-title">APA YANG DIMAKSUD DENGAN GAMBAR INI?</p>
+<div id="picture" class="picture">⚛️ + 🧪</div><p id="hint" class="hint"></p><p id="answer" class="answer hidden"></p></article>
+<footer class="game-footer"><div id="timer" class="timer">Waktu: 15 detik</div>
+<div class="actions"><button id="revealBtn" class="btn btn-reveal">💡 Lihat Jawaban</button>
+<button id="nextBtn" class="btn btn-next">Soal Berikutnya ➜</button></div></footer>
+<p class="keyboard-help">Tekan F untuk layar penuh. Tekan Esc untuk keluar dari layar penuh.</p>
+</section>
+<section id="result" class="screen result hidden"><p class="eyebrow">PERMAINAN SELESAI</p><h2>🎉 Permainan Selesai! 🎉</h2>
+<p class="result-label">SKOR AKHIR</p><p id="finalScore" class="final-score">0 / 130</p><p id="finalMessage" class="final-message"></p>
+<button id="replayBtn" class="btn btn-start">🔄 MAIN LAGI</button><p class="organizer">SENASTIK 2026 • Universitas PGRI Kalimantan</p></section>
+</main>
+<dialog id="gradingDialog"><h2>Penilaian Jawaban</h2><p>Apakah peserta berhasil menjawab dengan benar?</p>
+<div class="dialog-actions"><button id="correctBtn" class="btn btn-start">Benar (+10)</button><button id="wrongBtn" class="btn btn-next">Belum benar</button><button id="cancelBtn" class="btn btn-muted">Batal</button></div></dialog>
+<script src="script.js"></script></body></html>
